@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSEDU</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+
+    <style>
+        h1::before{
+            content: "Hello ";
+            color:lime; 
+        }
+
+        h1::after{
+            content: " gello ";
+            color:orange;
+        }
+
+        blockquote::before{
+            /* content:' " '; */
+            content:open-quote;
+            color:red;
+            font-size: 1.5rem;
+        }
+
+        blockquote::after{
+            /* content:' " '; */
+            content:close-quote;
+            color:red;
+            font-size: 1.5rem;
+        }
+        .section-title{
+            display:inline-block;
+
+        }
+        .section-title::after,.section-title:hover::before{
+            content:'';
+            display: block;
+            background:green;
+            height: 2px;
+            width: 100%;
+
+
+        }
+        input:required + label::after {
+  content: " * ";
+  color: red;
+}
+    </style>
+</head>
+<body>
+    <h1>having fun with pesudu</h1>
+
+    <section>
+        <h2 class="section-title">Best Quatas</h2>
+        <blockquote>
+            The greatest glory in living lies not in never falling, but in rising every time we fall.
+        </blockquote>
+        <blockquote>
+            Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking
+        </blockquote>
+        <blockquote>
+            If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough.
+        </blockquote>
+        <blockquote>
+            If life were predictable it would cease to be life, and be without flavor. 
+        </blockquote>
+    </section>
+    <input type="text" required>
+    <label>Label</label>
+
+
+
+    <!-- bootstrap js -->
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
